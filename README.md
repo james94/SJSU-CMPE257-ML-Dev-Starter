@@ -48,6 +48,10 @@ docker run --name cmpe257_ml_dev -p 8888:8888 -it -v /mnt/c/proj/SJSU-CMPE257-ML
 docker run --name cmpe257_ml_dev -p 8888:8888 -it -v /proj/SJSU-CMPE257-ML-Dev-Starter:/sjsu/cmpe257_ml cmpe257_ml:dev
 ~~~
 
+Here's a view of what you should see in your terminal:
+
+![launch_cmpe257_docker_container_020322.jpg](./images/launch_cmpe257_docker_container_020322.jpg)
+
 So now we can work on the Python code for our ML Application from our Windows, Mac, or Linux dev host and those updates will show up in our Docker container's volume mounted point. This is also true if we work directly from our Jupyter Web App that has direct connection to our Docker container, the volume mounted point on our dev host will be updated with any new Jupyter Notebooks we create and any new Python code we write.
 
 3\. Once the Docker container is deployed, you should see in your terminal a URL with the hostname and token in the web address where your Jupyter Notebook Web App is running:
